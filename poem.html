@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+<style>
+	html,body{
+		min-width:290px;
+		color:#4d4e53;
+		background-color:#fff;
+		font-family: 'Kosugi', sans-serif;
+		line-height:1.5;
+	}
+	
+	pre{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-family:'Sawarabi Mincho', sans-serif;
+		display:block;
+		position:relative;
+		background-color:#f7f7f7;
+		line-height:2;
+		border-radius:5px;
+		word-break:normal;
+		/*word-break属性指定非CJK脚本的断行规则。提示:CJK脚本是中国，日本和韩国（"中日韩"）脚本。
+		  normal使用浏览器默认的换行规则*/
+		word-wrap:normal;
+		/*word-wrap属性允许长的内容可以自动换行
+		  normal只在允许的断字点换行（浏览器保持默认处理）*/
+		white-space:pre-wrap;/*css3*/
+		white-space:-moz-pre-wrap;/*mozilla,since1999*/
+		white-space:-pre-wrap;/*opera4-6*/
+		white-space:-o-pre-wrap;/*opera7*/
+		word-wrap:break-word;/*ie5.5+*/
+		/*white-space属性指定元素内的空白怎样处理。pre,空白会被浏览器保留。其行为方式类似 HTML中的pre标签。
+		  pre-wrap保留空白符序列，但是正常地进行换行。*/
+		text-align:left;
+		padding:15px;
+		margin:10px;
+	}
+	#navbar{
+		position:fixed;
+		min-width:290px;
+		top:0px;
+		left:0px;
+		width:300px;
+		height:100%;
+		border-right:solid;
+		border-color:rgba(0,22,22,0.4);
+	}
+	header{
+		color:black;
+		margin:10px;
+		text-align:center;
+		font-size:1.8rem;
+		font-weight:thin;
+	}
+	#navbar ul{
+		height:88%;
+		padding:0;
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+	#navbar li{
+		color:#4d4e53;
+		border-top:1px solid;
+		list-style:none;
+		position:relative;
+		width:100%;
+	}
+	#navbar a{
+		display:block;
+		padding:10px 30px;
+		color:#4d4e53;
+		text-decoration:none;
+		cursor:pointer;
+	}
+	#main-doc{
+		position:absolute;
+		margin-left:310px;
+		padding:20px;
+		margin-bottom:110px;
+	}
+	section article{
+		color:#4d4e53;
+		margin:15px;
+		font-size:0.96em;
+	}
+	@media only screen and (max-width:815px){
+		/*for mobile phones*/
+		#navbar ul{
+			border:1px solid;
+			height:207px;
+		}
+		#navbar{
+			background-color:white;
+			position:absolute;
+			top:0;
+			margin:0;
+			padding:0;
+			width:100%;
+			max-height:275px;
+			border:none;
+			z-index:1;
+			border-bottom:2px solid;
+		}
+		#main-doc{
+			position:relative;
+			margin-left:0px;
+			margin-top:270px;
+		}
+	}
+	@media only screen and (max-width:400px){
+		#main-doc{
+			margin-left:-10px;
+		}
+		pre{
+			margin-left:-20px;
+			width:100%;
+			padding:15px;
+			padding-left:10px;
+			padding-right:45px;
+			min-width:233px;
+		}
+	}
+	.translate{
+		font-family: 'Noto Serif SC', serif;
+	}
+	.main-section header{
+		margin-top:10vh;
+	}
+</style>
+</head>
+<nav id="navbar">
+	<header>日常生活の日本語</header>
+	<ul>
+		<li><a class="nav-link" href="#eat">1 レストランで</a></li>
+		<li><a class="nav-link" href="#transport">2 交通</a></li>
+		<li><a class="nav-link" href="#shopping">3 ショッピング</a></li>
+		<li><a class="nav-link" href="#rent">4 部屋を借りる</a></li>
+		<li><a class="nav-link" href="#travel">5 旅行</a></li>
+		<li><a class="nav-link" href="#film">6 映画を見る</a></li>
+		<li><a class="nav-link" href="#postOffice">7 郵便局で</a></li>
+		<li><a class="nav-link" href="#trouble">8 故障・トラブル</a></li>
+		<li><a class="nav-link" href="#dayOff">9 休暇を取る</a></li>
+		<li><a class="nav-link" href="#hospital">10 病院で</a></li>
+		<li><a class="nav-link" href="#borrow">11 物を借りる</a></li>
+		<li><a class="nav-link" href="#greeting">12 挨拶</a></li>
+		<li><a class="nav-link" href="#thanks">13 感謝する・謝る</a></li>
+		<li><a class="nav-link" href="#call">14 電話を掛ける</a></li>
+		<li><a class="nav-link" href="#weather">15 天気</a></li>
+		<li><a class="nav-link" href="#reject">16 誘う・断る</a></li>
+	</ul>
+</nav>
+<main id="main-doc">
+	<section class="main-section" id="eat">
+		<header>1 レストランで</header>
+		<article>
+			<p>情景会話１ 予約する/<span class="translate">预约</span></p>
+<pre>
+暗闇の人へ
+今はどこ分からない
+どこに行きたい分からない
+あるいは
+行きたいところがあるんだけど
+過程は焦たり長すぎる
+どうか諦めないでください。
+お願いします。
+ピンク色の雲、ありがとう。
+水のように流される雲、ありがとう。
+魚の部分みたい並べてる雲、ありがとう。
+その感動をみんなに伝える。
+</pre>
+<pre class="translate">
+
+</pre>
+<p>情景会話２　店内へ案内する/<span class="translate">带客人进店</span></p>
+<pre>
+
+</pre>
+		</article>
+	</section>
+</main>
+</html>

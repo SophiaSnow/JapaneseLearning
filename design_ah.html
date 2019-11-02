@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+<style>
+	html,body{
+		min-width:290px;
+		color:#4d4e53;
+		background-color:#fff;
+		font-family: 'Kosugi', sans-serif;
+		line-height:1.5;
+	}
+	
+	pre{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-family:'Sawarabi Mincho', sans-serif;
+		display:block;
+		position:relative;
+		background-color:#f7f7f7;
+		line-height:2;
+		border-radius:5px;
+		word-break:normal;
+		/*word-break属性指定非CJK脚本的断行规则。提示:CJK脚本是中国，日本和韩国（"中日韩"）脚本。
+		  normal使用浏览器默认的换行规则*/
+		word-wrap:normal;
+		/*word-wrap属性允许长的内容可以自动换行
+		  normal只在允许的断字点换行（浏览器保持默认处理）*/
+		white-space:pre-wrap;/*css3*/
+		white-space:-moz-pre-wrap;/*mozilla,since1999*/
+		white-space:-pre-wrap;/*opera4-6*/
+		white-space:-o-pre-wrap;/*opera7*/
+		word-wrap:break-word;/*ie5.5+*/
+		/*white-space属性指定元素内的空白怎样处理。pre,空白会被浏览器保留。其行为方式类似 HTML中的pre标签。
+		  pre-wrap保留空白符序列，但是正常地进行换行。*/
+		text-align:left;
+		padding:15px;
+		margin:10px;
+	}
+	#navbar{
+		position:fixed;
+		min-width:290px;
+		top:0px;
+		left:0px;
+		width:300px;
+		height:100%;
+		border-right:solid;
+		border-color:rgba(0,22,22,0.4);
+	}
+	header{
+		color:black;
+		margin:10px;
+		text-align:center;
+		font-size:1.8rem;
+		font-weight:thin;
+	}
+	#navbar ul{
+		height:88%;
+		padding:0;
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+	#navbar li{
+		color:#4d4e53;
+		border-top:1px solid;
+		list-style:none;
+		position:relative;
+		width:100%;
+	}
+	#navbar a{
+		display:block;
+		padding:10px 30px;
+		color:#4d4e53;
+		text-decoration:none;
+		cursor:pointer;
+	}
+	#main-doc{
+		position:absolute;
+		margin-left:310px;
+		padding:20px;
+		margin-bottom:110px;
+	}
+	section article{
+		color:#4d4e53;
+		margin:15px;
+		font-size:0.96em;
+	}
+	@media only screen and (max-width:815px){
+		/*for mobile phones*/
+		#navbar ul{
+			border:1px solid;
+			height:207px;
+		}
+		#navbar{
+			background-color:white;
+			position:absolute;
+			top:0;
+			margin:0;
+			padding:0;
+			width:100%;
+			max-height:275px;
+			border:none;
+			z-index:1;
+			border-bottom:2px solid;
+		}
+		#main-doc{
+			position:relative;
+			margin-left:0px;
+			margin-top:270px;
+		}
+	}
+	@media only screen and (max-width:400px){
+		#main-doc{
+			margin-left:-10px;
+		}
+		pre{
+			margin-left:-20px;
+			width:100%;
+			padding:15px;
+			padding-left:10px;
+			padding-right:45px;
+			min-width:233px;
+		}
+	}
+	.translate{
+		font-family: 'Noto Serif SC', serif;
+	}
+	.main-section header{
+		margin-top:10vh;
+	}
+</style>
+</head>
+<nav id="navbar">
+	<header>日常生活の日本語</header>
+	<ul>
+		<li><a class="nav-link" href="#eat">103 デザインの見学</a></li>
+		<li><a class="nav-link" href="#transport">2 交通</a></li>
+		<li><a class="nav-link" href="#shopping">3 ショッピング</a></li>
+		<li><a class="nav-link" href="#rent">4 部屋を借りる</a></li>
+		<li><a class="nav-link" href="#travel">5 旅行</a></li>
+		<li><a class="nav-link" href="#film">6 映画を見る</a></li>
+		<li><a class="nav-link" href="#postOffice">7 郵便局で</a></li>
+		<li><a class="nav-link" href="#trouble">8 故障・トラブル</a></li>
+		<li><a class="nav-link" href="#dayOff">9 休暇を取る</a></li>
+		<li><a class="nav-link" href="#hospital">10 病院で</a></li>
+		<li><a class="nav-link" href="#borrow">11 物を借りる</a></li>
+		<li><a class="nav-link" href="#greeting">12 挨拶</a></li>
+		<li><a class="nav-link" href="#thanks">13 感謝する・謝る</a></li>
+		<li><a class="nav-link" href="#call">14 電話を掛ける</a></li>
+		<li><a class="nav-link" href="#weather">15 天気</a></li>
+		<li><a class="nav-link" href="#reject">16 誘う・断る</a></li>
+	</ul>
+</nav>
+<main id="main-doc">
+	<section class="main-section" id="eat">
+		<header>103 デザインの見学</header>
+		<article>
+			<p>情景会話１ 予約する/<span class="translate">预约</span></p>
+<pre>
+素材体操第一
+チーム丸
+
+</pre>
+<pre class="translate">
+世界は人間の想像が作り出すのだ。-イサム・ノグチ
+世界是由人类的想象力创造的。-野口勇
+デザインによって造るのではなく、造ることによって
+デザインが生まれる。　柳宗理
+自分の手で形を作りながら考えるところに本当のデザインがあるということじゃん
+要用自己手设计形状的同时去思考就会产生真正的设计。
+デザインの心を磨くアドバイスをお願いします。
+请给出可以磨练设计之心的建议。
+町の風景に溶け込むような八百屋さんを目指しました。
+自分が小さい頃お使いに行っていた近所の八百屋さんみたいに
+サンダル履きで入れる気軽さがあって
+想要打造出能够融入街道风景的蔬菜水果店，
+就如同自己小时候被差使去的家附近的蔬菜水果店那样，
+有着可以穿凉鞋走进去的无拘束感。
+どれだけ便利なものやサービスでも
+楽しとか嬉しいといった気持ちにならないものは
+どこか使う人の気持を考えていないからではないでしょうか
+自分の心の動きに注目してみましょう
+デザインをする上でとてもとても大切なことです。
+
+</pre>
+<p>情景会話２　店内へ案内する/<span class="translate">带客人进店</span></p>
+<pre>
+
+</pre>
+		</article>
+	</section>
+	<section class="main-section" id="eat">
+		<header>105 造る</header>
+		<article>
+			<p>情景会話１ つくる/<span class="translate">制造</span></p>
+<pre>
+ばね 弹簧
+解散（かいさん）
+めでたい 可喜可贺
+赤くて真ん丸ボディー 红色圆圆的身体
+倒しても何度でも起き上がる　よ！摔多少次都能再站起yo!
+七転び八起き（ななころびやおき）の縁起物（えんぎもの）不屈不挠的吉祥物
+だるまです。达摩不倒翁
+これは昔中国のお酒の席で遊ばれてた人形不倒翁（ふとうおう）。它是中国古代酒席上的玩具人偶不倒翁
+ところでこの人達磨大師（だるまたいし）元々インドの王子。不过这位达摩大师原来是印度王子
+達磨大師の座禅（ざぜん）する姿と不倒翁が重なって。达摩大师的坐禅姿势和不倒翁结合
+日本で中国インドの文化が混ざって（まざる）出来上がっただるま。中国和印度文化融合诞生出达摩不倒翁
+鶴は眉毛（まゆげ）鹤画在眉毛的位置上
+亀はお髭（ひげ）龟画在胡子那里
+松、梅（うめ）、耳髭（みみひげ）松梅画在耳朵下面的胡子位置
+竹は顎（あご）ひげ。竹画在下巴胡子位置
+見えてきた。見えてきた。看出来了，看出来了
+縁起のいい顔見えてきた。吉利的脸就这么出来了。
+白目（しろめ）のだるまに。在白眼珠的不倒翁上
+願いを込めて飾っておこう。带着愿望画上眼睛吧
+鶴と亀Hey松（しょう）竹（ちく）梅（ばい）
+健康めでたい。祈愿健康
+安全めでたい。祈愿安全
+繁盛（はんじょう）めでたい、合格めでたい。祈愿繁盛，祈愿合格
+いろんなルールとか決まり事があるけど、伝えたいのは。规则繁多，但想传达的是
+嬉しい縁起いいめでたいという気持ちです。开心好运可喜可贺的心情
+開眼（かいげん）初めに左目。开眼，先画左眼
+成就（じょうじゅ）のときには右目。愿望达成时画右眼
+初めにあ、成就のときにはうん。先画的是a，愿望达成时画un
+お書き込むことも、選挙のときは右目から。记入方式也有不同，选举时先画右眼
+順番ルール諸説あるが。顺序规则各不同
+願いが叶えば残りも入れて、神社やお寺で供養（くよう）しよう。愿望实现后画剩下的眼睛，去神社或寺庙供养吧
+赤は魔除け（まよけ）の色、諸説あるが達磨大師の衣色（ころもいろ）。红色是辟邪之色，达摩大师袈裟之色。
+白色、黒色、黄色、ピンク、緑色。白黑黄粉绿
+色もいろいろご利益いろいろ。颜色众多恩惠众多
+転んでも起き上がれろう跌倒也能站起来
+七転び八起き（ななころびやおき）
+
+もん　纹饰
+日本に古くから伝わる紋。日本自古以来的纹饰
+一体どのように描いているんでしょうか。究竟是如何描绘出来的呢
+拝見致します。让我们来欣赏一下
+円ですね。开始是圆
+線を引いて小さな円が2つ。再画两个小圆
+そこに大きな円。然后两个大圆
+中心を少しずらすんですね。从中心稍微偏一点
+あ？これだけで出来ちゃう？就这么完成了吗？
+二つ巴（どもえ）二巴纹
+お祭りの太鼓や神社で目にしますよね。在祭祀的大鼓和神社见过呢。
+少ない手数でこんな美しい形を作るんだ。只寥寥数笔就形成了如此美丽的形状。
+さてさてお次は。那接下来呢。
+丸を3つ真ん中に寄せています。三个圆聚集在中间
+そこに右回りに円を重ねてますね。向右依次重叠画圆
+もう一つ。再一次
+あ、なるほど。啊，原来如此
+そうなるのか。变成这样了啊。
+三つ巴（どもえ）三巴纹
+水や雲が渦巻く（うずまく）ようなうねりを感じさせますね。見とれちゃうなあ。
+像水或云卷起漩涡的波纹，真迷人啊。
+二つ巴、三つ巴、お次は。二巴纹三巴纹，接着呢
+これはどういう円なんでしょうか。这是什么圆呢？
+それぞれの円を少しずつ繋げるんですね。每个圆一点点连接在一起呢。
+巴、最も単純のようで。巴纹，看似最简单
+実は繊細な工夫が凝らされた（こらす）形だったんですね。实则是经过细腻雕琢形成的
+円と線で、森羅万象（しんらばんしょう）を描き出す日本の紋。只用点和线就能描绘出世间万物，日本纹饰。
+巴の形にここに極まりました。巴纹被发挥至极致到这种地步了。
+チーム〇〇。今日は何するチームでしょう。这次会是什么团队呢
+はいはいはい。ちょっと待って。
+靴（くつ）鞋
+スコップ　铲
+ポリ袋　塑料袋
+ペットボトル　塑料瓶
+蛇口（じゃぐち）水龙头
+首輪（くびわ）项圈
+もうわかった。看出来了吗
+リード　牵引绳
+以上七名、チーム犬の散歩するでした。以上，遛狗七件集齐啦
+動線歌。（どうせん）流动线之歌
+歩く。走
+曲がる。转弯
+止まる。停
+登る。上楼
+下りる。下来
+デザインの人　设计之人
+今日のデザインの人は。本次的设计之人是。
+ミュージアムデザイナーの田中俊行（たなか　としゆき）です。博物馆设计师
+田中さんは色々なミュージアムで。让人们在各种博物馆内
+科学や文化の面白さを体で感じて楽しんでもらえるように。对科学和文化的有趣之处能用身体感受到其乐趣的。
+空間をデザインする人です。空间设计师。
+そんな田中さんが気に入っているデザインは何ですか。那么田中先生中意的设计作品是什么呢？
+今私のいるトヨタ博物館という車のミュージアムの空間です。是此时我身处的丰田汽车博物馆这样的空间。
+ここはスタジアムのようにとっても広いミュージアムですが。这里虽然像体育馆一样开阔
+一目で全体を見渡せるような室内にデザインしています。却是能让参观者一眼饱览全貌的室内设计
+空間を仕切っていないので（しきる）クラシックカーから実用車やスポーツカーまで。没有空间区隔，人们可以在老爷车，实用车，跑车之间
+皆さんが「面白い！格好いい！楽しそう！」と感じた車屋と。让人们觉得“好有趣好帅好开心”的车店里
+自由に見て回ることができるんですよ。自由漫步观赏哦。
+では、いつもデザインする時大切にしている事は何ですか。那您在平时设计时重视的是什么呢。
+ミュージアムに来た人が。让所有到馆者
+そこで体験した事や共感した事。在其中体验到的和有共鸣的。
+思わず誰かに話したくなるような空間をデザインしたいと思っています。情不自禁想和别人分享的，想设计出这样的空间。
+では最後に、デザインの心を磨くアドバイスをお願いします。那么最后请给出磨炼设计之心的建议。
+頭の中に自分のミュージアムも作ってみよう。在脑中建造自己的博物馆吧
+ミュージアムに物集めるように。在馆内收集物品。
+心と体で見つけた面白い発見をエア、言葉にして残しておきましょう。把那些通过身心发掘的有趣发现化为空气，化为语言留下来吧。
+例えば音や光の気配（けはい）。例如声音和光的感觉。
+物の手触り（てざわり）。物品的触感。
+楽しかった事などです。趣事等等。
+それらがいつか頭の中で繋がったり。这些不知不觉在脑中相通。
+くっついたりすることで君だけの表現ができるようになりますよ。结合在一起继而转化成你自己独有的表达哦。
+ということで、皆さんぜひ頭の中に。所以请大家务必试着在大脑中建造
+自分のミュージアムも作ってみましょう。属于自己的博物馆吧。
+</pre>
+<pre class="translate">
+
+
+</pre>
+<p>情景会話２　店内へ案内する/<span class="translate">带客人进店</span></p>
+<pre>
+
+</pre>
+		</article>
+	</section>
+</main>
+</html>
